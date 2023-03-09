@@ -18,7 +18,7 @@ public class ControlPrendreEtal {
 		return village.rechercherEtalVide();
 	}
 
-	private int prendreEtal(String nomVendeur, String produit, int nbProduit) {
+	public int prendreEtal(String nomVendeur, String produit, int nbProduit) {
 		//TODO a completer
 		int numeroEtal = -1;
 		Gaulois gaulois = village.trouverHabitant(nomVendeur);
