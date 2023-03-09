@@ -28,10 +28,6 @@ public class ControlPrendreEtal {
 
 	public boolean verifierIdentite(String nomVendeur) {
 		//TODO a completer, attention le retour ne dit pas etre false :-)
-		boolean nomVendeurConnu = false;
-		if (controlVerifierIdentite.verifierIdentite(nomVendeur)) {
-			nomVendeurConnu = true;
-		}
-		return nomVendeurConnu;
+		return controlVerifierIdentite.verifierIdentite(nomVendeur);
 	}
 }

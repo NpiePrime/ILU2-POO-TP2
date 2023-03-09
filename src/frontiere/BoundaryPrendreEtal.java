@@ -30,15 +30,15 @@ public class BoundaryPrendreEtal {
 	private void installerVendeur(String nomVendeur) {
 		//TODO a completer
 		StringBuilder question = new StringBuilder();
+		String produit = " ";
 		int nbProduit;
 		int numeroEtal = -1;
 		question.append("C'est parfait, il me reste un étal pour vous !\n");
 		question.append("Il me faudrait quelques renseignements :\n");
 		question.append("Quel produit souhaitez-vous vendre ?\n");
-		/************ENTRER CLAVIER STRING************************/
-		String produit = " ";
-		question.append("Combien souhaitez-vous en vendre ?\n");
-		nbProduit = Clavier.entrerEntier(question.toString());
+		System.out.println(question.toString());
+		produit = scan.next();
+		nbProduit = Clavier.entrerEntier("Combien souhaitez-vous en vendre ?\n");
 		numeroEtal = controlPrendreEtal.prendreEtal(nomVendeur, produit, nbProduit);
 		if (numeroEtal != -1) {
 			System.out.println("Le vendeur " + nomVendeur + " s'est installé à l'étal n° " + numeroEtal + ".");
