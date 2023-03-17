@@ -12,11 +12,7 @@ public class ControlLibererEtal {
 
 	//TODO a completer
 	public boolean isVendeur(String nomVendeur) {
-		boolean vendeurReconnu = false;
-		if (controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur) != null) {
-			vendeurReconnu = true;
-		}
-		return vendeurReconnu;
+		return controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur) != null;
 	}
 	
 	/**
