@@ -18,6 +18,7 @@ public class BoundaryAcheterProduit {
 		// TODO Ã  completer
 		StringBuilder question = new StringBuilder();
 		StringBuilder question2 = new StringBuilder();
+		int produitAchete;
 		String produit;
 		int quantiteProduit;
 		String nomVendeur;
@@ -38,9 +39,9 @@ public class BoundaryAcheterProduit {
 		etalVendeur = controlAcheterProduit.trouverEtalVendeur(nomVendeur);
 		System.out.println(nomAcheteur + " se déplace jusqu'à l'étal du vendeur " + nomVendeur + ".");
 		question2.append("Bonjour " + nomAcheteur + "\n");
-		question2.append("Combien de fleurs voulez-vous acheter?\n");
+		question2.append("Combien de " + produit + " voulez-vous acheter?\n");
 		quantiteProduit = Clavier.entrerEntier(question2.toString());
-		controlAcheterProduit.acheterProduit(etalVendeur, quantiteProduit);
+		produitAchete= controlAcheterProduit.acheterProduit(etalVendeur, quantiteProduit);
 		System.out.println(nomAcheteur + " a acheté " + quantiteProduit + " de " + produit + " à " + nomVendeur + "." );
 		
 
