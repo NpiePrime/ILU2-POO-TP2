@@ -31,7 +31,7 @@ public class BoundaryLeVillage {
 		boundaryAfficherVillage.afficherVillage();
 		do {
 			StringBuilder question = new StringBuilder();
-			question.append("Qui étes-vous ?\n");
+			question.append("Qui êtes-vous ?\n");
 			question.append("1 - un voyageur\n");
 			question.append("2 - un marchand\n");
 			question.append("3 - un client du marche\n");
